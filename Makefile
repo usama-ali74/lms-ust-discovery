@@ -87,7 +87,7 @@ validate: quality test ## Run tests and quality checks
 
 migrate: ## Apply database migrations
 	python manage.py migrate --noinput
-	python manage.py install_es_indexes
+	# python manage.py install_es_indexes
 
 html_coverage: ## Generate and view HTML coverage report
 	coverage html && open htmlcov/index.html
